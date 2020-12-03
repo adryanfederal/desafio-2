@@ -28,21 +28,7 @@ if (imc < 16) {
     classification = "Obesidade grau 3";
 }
 
-try {
-    $("#result").html(
-        personName + " possui índice de massa corporal igual a " +
-        personWeight + ".<br> Sendo classificado como: " + classification
-
-    );
-} catch {
-    // document.write(
-    //     personName + " possui índice de massa corporal igual a " +
-    //     personWeight + ".<br> Sendo classificado como: " + classification
-    // );
-
-    var span = document.getElementById('result');
-
-    span.innerHTML += personName + " possui índice de massa corporal igual a ";
-    span.innerHTML += personWeight + ".<br> Sendo classificado como: " + classification;
-
-}
+document.write(
+    personName + " possui índice de massa corporal igual a " +
+    personWeight + ".<br> Sendo classificado como: " + classification
+);
